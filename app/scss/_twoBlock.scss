@@ -1,0 +1,129 @@
+.twoBlock {
+  width: 100%;
+  height: 850px;
+  position: relative;
+}
+.twoBlock-wrap {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.personalDetails {
+  background-image: url(../img/rectangle.png);
+  width: 70%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  @include adaptiv-font(20, 14);
+  padding: 40px 20px 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0px 13px 32px 0px rgba(0, 0, 0, 0.75);
+  &:hover {
+    filter: contrast(170%);
+  }
+}
+.sp-wrap {
+  color: #222;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    color: #222;
+    text-decoration: underline;
+  }
+}
+.sp-name {
+  color: #ffffff;
+  font-weight: 400;
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+
+.meIcon {
+  color: #05386b;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.aboutName {
+  @include titleSection;
+  opacity: 0;
+  top: 50px;
+  transform: translateY(0);
+  transition: all 1s ease-out;
+}
+.aboutName.fade-in {
+  opacity: 1;
+  transform: translateY(50px);
+}
+
+.img {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+.myPhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 13px 32px 0px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  margin-top: -70px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: all 1.5s ease-out;
+
+  &:hover {
+    filter: contrast(150%);
+  }
+}
+
+.ap-in {
+  opacity: 1;
+  transform: scale(1);
+}
+@media screen and (max-width: 1000px) {
+  .personalDetails {
+    width: 100%;
+    padding: 40px;
+  }
+  .img {
+    width: 100%;
+    margin: 20px 0 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .sp-wrap {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .myPhoto {
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+   .twoBlock {
+    height: 1100px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+ 
+  .myPhoto {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .myPhoto {
+    width: 250px;
+    height: 250px;
+  }
+}

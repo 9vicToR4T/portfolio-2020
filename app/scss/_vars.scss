@@ -1,0 +1,27 @@
+$lava: #05386b;
+$white: #fff;
+
+$maxWidth: 1440;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+@mixin bgColor {
+  background: #5cdb95; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #5cdb95, #8ee4af); /* Chrome 10-25, Safari 5.1-6 */
+}
+@mixin titleSection {
+  position: absolute;
+  color: #05386b;
+  @include adaptiv-font(45, 30);
+  top: 20px;
+  left: 0px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+@mixin skill{
+
+}

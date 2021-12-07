@@ -1,0 +1,112 @@
+#skills.threeBlock {
+  width: 100%;
+  position: relative;
+  @include bgColor;
+  margin-bottom: 100px;
+}
+
+.skil {
+  @include titleSection;
+}
+.skill-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+}
+.skill-wrap-hard {
+  background-image: url(../img/rectangle.png);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  font-size: 20px;
+  text-align: left;
+  border-radius: 10px;
+  letter-spacing: 1, 5px;
+  z-index: 10;
+  padding: 10px 40px 30px;
+  box-shadow: 0px 2px 42px -1px rgba(5, 5, 5, 1);
+  &:hover {
+    filter: contrast(170%);
+  }
+}
+.skill-wrapp-soft {
+  background-image: url(../img/rectangle.png);
+  padding: 10px 40px 30px;
+  display: flex;
+  height: 300px;
+  margin: 0 0 0 30px;
+  text-align: left;
+  flex-direction: column;
+  flex-basis: 40%;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 1, 5px;
+  z-index: 99;
+  box-shadow: 0px 2px 42px -1px rgba(5, 5, 5, 1);
+  &:hover {
+    filter: contrast(170%);
+  }
+}
+.title-skils {
+  font-size: 30px;
+  margin: 10px auto;
+}
+.sp-skill {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.brain-img {
+  left: 168px;
+  top: -7px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  &:hover {
+    filter: contrast(250%);
+  }
+}
+@media screen and(max-width:770px) {
+  .brain-img {
+    display: none;
+  }
+  .skill-wrap {
+    justify-content: center;
+    flex-wrap: nowrap;
+    text-align: center;
+  }
+  .skill-wrap-hard {
+    flex-basis: 65%;
+    text-align: center;
+  }
+  .skill-wrapp-soft {
+    flex-basis: 35%;
+    margin-top: 0px;
+    text-align: center;
+  }
+}
+@media screen and(max-width:500px) {
+   .skill-wrap-hard {
+   margin: 0;
+  }
+    .skill-wrap {
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .skill-wrap-hard {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .skill-wrapp-soft {
+    flex-basis: 100%;
+    margin: 60px 0 0 ;
+    text-align: center;
+  }
+  
+  .skil {
+    width: 100%;
+    text-align: center;
+}
+}

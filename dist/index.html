@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Victor</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="menu-wrap">
+          <div class="menu-icon">
+            <span class="menu-span"></span>
+          </div>
+        </div>
+        <div class="logo">
+          <a href="#">
+            <img class="logo" src="img/logo_transparent.png" alt="logo" />
+          </a>
+        </div>
+        <div class="header__aside">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a class="menu-item" href="#about"
+                  ><span><i class="ico fa fa-universal-access"></i></span
+                  ><span class="menu-text">About</span></a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#skills"
+                  ><span><i class="ico fa fa-bomb"></i></span
+                  ><span class="menu-text">Skills</span></a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#portfolio"
+                  ><span><i class="ico fa fa-edit"></i></span
+                  ><span class="menu-text">Portfolio</span></a
+                >
+              </li>
+              <li>
+                <a class="menu-item" href="#contacts"
+                  ><span><i class="ico fa fa-address-book"></i></span
+                  ><span class="menu-text">Contacts</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__arrows">
+          <a href="#" class="">
+            <span>
+              <i
+                class="fa fa-angle-double-down arr animate__animated animate__fadeInDown animate__repeat-3 animate__slower"
+              ></i>
+            </span>
+          </a>
+        </div>
+
+        <div class="header__slider">
+          <div class="header__slider-item slider-item">
+            <div class="compSvg-wrap">
+              <img class="compSvg" src="img/computer.svg" alt="image" />
+            </div>
+            <div class="slider-item__info">
+              <div class="slider-item__info-suptitle headline-left suptitle-left">
+                Creativity
+              </div>
+              <div class="slider-item__info-title">HTML CSS JS</div>
+              <div class="slider-item__info-suptext headline-left">Result</div>
+              <div class="slider-item__info-text">Front End</div>
+            </div>
+          </div>
+
+          <div class="header__slider-item slider-item">
+            <div class="compSvg-wrap">
+              <img class="compSvg" src="img/book.svg" alt="image" />
+            </div>
+            <div class="slider-item__info">
+              <div class="slider-item__info-suptitle headline-left">
+                Knowledge
+              </div>
+              <div class="slider-item__info-title">Books</div>
+              <div class="slider-item__info-suptext headline-left">Progress</div>
+              <div class="slider-item__info-text">Discipline</div>
+            </div>
+          </div>
+
+          <div class="header__slider-item slider-item">
+            <div class="compSvg-wrap">
+              <img class="compSvg" src="img/philosophy.svg" alt="image" />
+            </div>
+            <div class="slider-item__info">
+              <div class="slider-item__info-suptitle headline-left">
+                Balance
+              </div>
+              <div class="slider-item__info-title">Health</div>
+              <div class="slider-item__info-suptext headline-left">Motivation</div>
+              <div class="slider-item__info-text">Sport</div>
+            </div>
+          </div>
+
+          <div class="header__slider-item slider-item">
+            <div class="compSvg-wrap">
+              <img class="compSvg" src="img/collaboration.svg" alt="image" />
+            </div>
+            <div class="slider-item__info">
+              <div class="slider-item__info-suptitle headline-left">
+                Stronger
+              </div>
+              <div class="slider-item__info-title">Family</div>
+              <div class="slider-item__info-suptext headline-left">Togeter</div>
+              <div class="slider-item__info-text">Team</div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots">
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__number">01</div>
+              <div class="dots-box__name">Front End</div>
+            </div>
+          </div>
+
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__number">02</div>
+              <div class="dots-box__name">Books</div>
+            </div>
+          </div>
+
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__number">03</div>
+              <div class="dots-box__name">Health</div>
+            </div>
+          </div>
+
+          <div class="slider-dots__item">
+            <div class="dots-box">
+              <div class="dots-box__number">04</div>
+              <div class="dots-box__name">Family</div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="twoBlock" id="about">
+        <div class="wrapper">
+          <div class="aboutName" id="abb">About</div>
+          <div class="twoBlock-wrap">
+            <div class="img">
+              <img src="./img/tu.jpg" alt="me" class="myPhoto" id="me" />
+            </div>
+            <div class="personalDetails">
+              <span class="sp-wrap">
+                <span class="sp-name"><i class="fa fa-street-view meIcon"></i>Full Name:</span>
+                <a href="https://www.instagram.com/victor.t94/?hl=ro">Tarîța Victor</a>
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name"><i class="fa fa-birthday-cake meIcon"></i>Date of Birth:</span
+                >24/12/1994
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name">
+                  <i class="fa fa-globe meIcon"></i>
+                  Citizenship:
+                </span>
+                Moldova and Romanian
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name"><i class="fa fa-envelope meIcon"></i>Email Address:</span>
+                <a href="mailto:victor.tarita94@gmail.com">victor.tarita94@gmail.com</a>
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name">
+                  <i class="fa fa-linkedin meIcon"></i>
+                  LinkedIn
+                </span>
+                <a href="https://www.linkedin.com/in/tarita-victor-b131b61a8">LinkedIn</a>
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name"><i class="fa fa-graduation-cap meIcon"></i>Studies:</span>
+                <span class="myStudy"
+                  >Bachelor and Master Degree,
+                  <i> "State and Society from Historical Perspective".</i>
+                  Faculty of History and Philosophy, Moldova State University, Chişinău (Moldova)
+                </span>
+              </span>
+              <span class="sp-wrap">
+                <span class="sp-name"
+                  ><i class="fa fa-exclamation-circle meIcon"></i>Other information:</span
+                >
+                From August 2019, I started to study intensively the Front End field(courses,
+                google, youtube, books)
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="threeBlock" id="skills">
+        <div class="wrapper">
+          <div class="skil">
+            Skills
+          </div>
+          <div class="skill-wrap">
+            <div class="brain">
+              <img src="./img/brain.png" alt="brain" class="brain-img" />
+            </div>
+
+            <div class="skill-wrap-hard">
+              <h3 class="title-skils">Hard Skills</h3>
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>HTML5/CSS3</span>
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>Responsive Web Design</span
+              >
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>SASS/SCSS</span>
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>BEM</span>
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>JavaScript/ES6+(good base)</span
+              >
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>React(almost 50%)</span
+              >
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>jQuery</span>
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>WordPress, Gulp, GIT(beginner)
+              </span>
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>Bootstrap</span>
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>Adobe Photoshop, Figma, Zeplin</span
+              >
+            </div>
+            <div class="skill-wrapp-soft">
+              <h3 class="title-skils"><i class="fa fa-brain"></i>Soft Skills</h3>
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>Self Management</span>
+              <span class="sp-skill"><i class="fa fa-arrow-circle-right"></i>Team Work</span>
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>English Language(A2+)</span
+              >
+              <span class="sp-skill"
+                ><i class="fa fa-arrow-circle-right"></i>Creativity and Willingness to Learn</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <div class="wrapper">
+          <div class="scren">
+            <div class="portfolio-title">
+              Portfolio
+            </div>
+            <img class="screenImg" src="./img/Monitor-PNG-Background-Image.png" alt="image" />
+          </div>
+          <div class="portfolio-wrap">
+            <div class="exampleProject">
+              <div class="example-wrap-img">
+                <img class="example-img" src="./img/todo.jpg" alt="example" />
+              </div>
+              <div class="ex-details">
+                <div class="ex-title">React Todo App</div>
+                <div class="ex-descr">
+                  You can see the project on my <b>GitHub Pages</b>:
+                  <a href="https://9victor4t.github.io/app-react-todo/">TODO</a>
+                </div>
+                <span class="span-counter"
+                  >I used: create-react-app, ES6 Destructuring, Handling Events, method slice(),
+                  method findIndex(), method filter()
+                </span>
+                <span class="span-counter"
+                  >It was interesting to organize the addition and deletion of items in the list.
+                  Also, I liked to better understand how to use the methods of searching and
+                  filtering the elements in the application.</span
+                >
+              </div>
+            </div>
+
+            <div class="exampleProject">
+              <div class="example-wrap-img">
+                <img class="example-img" src="./img/counter.jpg" alt="example" />
+              </div>
+
+              <div class="ex-details">
+                <div class="ex-title">Counter React</div>
+                <div class="ex-descr">
+                  You can see the project on my <b>GitHub Pages</b>:
+                  <a href="https://9victor4t.github.io/counter-React/">Counter</a>
+                </div>
+                <span class="span-counter">My first project created with React </span>
+                <span class="span-counter"
+                  >I used: create-react-app, framework UIkit, class component, state, setState(),
+                  method filter() .</span
+                >
+              </div>
+            </div>
+
+            <div class="exampleProject">
+              <div class="isla-slider isla-slider-css">
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/1024.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/320.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/slid.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/footer.png" alt="image" />
+                </div>
+              </div>
+
+              <div class="ex-details">
+                <div class="ex-title">Big Boss</div>
+                <div class="ex-descr">
+                  You can see the project on my <b>GitHub Pages</b>:
+                  <a href=" https://9victor4t.github.io/islamov/">Big Boss</a>
+                </div>
+                <span class="span-counter">Responsive Web Design</span>
+                <span class="span-counter"
+                  >I used: jQuery Plugin: twentytwenty,Gulp, GitHub, carousel Slick, JavaScript
+                  library: Leaflet
+                </span>
+              </div>
+            </div>
+
+            <div class="exampleProject">
+              <div class="example-wrap-img">
+                <img class="example-img" src="./img/shop-guitar.png" alt="example" />
+              </div>
+              <div class="ex-details">
+                <div class="ex-title">Shop-Guitar</div>
+                <div class="ex-descr">
+                  You can see the project on my <b>GitHub Pages</b>:
+                  <a href="https://9victor4t.github.io/shop-guitar/">Shop</a>
+                </div>
+                <span class="span-counter"
+                  >I used the Fetch API to connect to a local file (JSON file). The products are
+                  added and dynamically wiped from the basket. The basket calculates the total
+                  amount.
+                </span>
+                <span class="span-counter"
+                  >The instruments can be filtered by price (ascending and descending) and we can
+                  search by name.</span
+                >
+                <span class="span-counter">Responsive content</span>
+              </div>
+            </div>
+
+            <div class="exampleProject">
+              <div class="isla-slider isla-slider-css">
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-home.png" alt="image" />
+                </div>
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-el.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-el1.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-el2.png" alt="image" />
+                </div>
+
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-shop.png" alt="image" />
+                </div>
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-shopPage.png" alt="image" />
+                </div>
+                <div class="isla-slider-item">
+                  <img class="isla-img" src="./img/ganja-wp.png" alt="image" />
+                </div>
+              </div>
+
+              <div class="ex-details">
+                <div class="ex-title">Ganja Shop</div>
+                <div class="ex-descr">
+                  This site is not published. It is the project created as part of the internship
+                  course in the Kivork company.
+                </div>
+                <span class="span-counter triggerFoot"><b>WordPress+WooCommerce</b></span>
+                <span class="span-counter"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contacts">
+      <div class="footer__wrapp">
+        <div class="footer__box">
+          <h3 class="footer__elem"><i class="fa fa-street-view meIcon"></i>Contacts</h3>
+          <div class="footer__elem">
+            Phone number: <span class="footer__link">+373 62 159 180</span>
+          </div>
+          <div class="footer__elem">
+            My gmail:
+            <a class="footer__link" href="mailto:victor.tarita94@gmail.com"
+              >victor.tarita94@gmail.com</a
+            >
+          </div>
+          <div class="footer__elem">
+            Instagram:
+            <a class="footer__link" href="https://www.instagram.com/victor.t94/">Victor</a>
+          </div>
+          <div class="footer__elem">
+            <a class="footer__link" href="https://www.linkedin.com/in/tarita-victor-b131b61a8"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="footer-icon">
+          <img class="footer-icon__img" src="img/thank-you.svg" alt="image" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
